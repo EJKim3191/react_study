@@ -15,7 +15,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
     fontSize: 50,
   }));
 
-const Square = ( {value, makeTurn, newGame} ) => {
+const Square = ( { squareNum, value, makeTurn, newGame} ) => {
     const [clicked, setClicked] = useState(0);
     const [pic, setPic] = useState(' ');
 
@@ -33,7 +33,7 @@ const Square = ( {value, makeTurn, newGame} ) => {
         };
 
         setPic(value);
-        makeTurn();
+        makeTurn(squareNum);
     }
     
 

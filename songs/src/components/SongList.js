@@ -8,9 +8,7 @@ class SongList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
-  
-  return state;
+  return { songs: state.songs };
 }
 
 export default connect(mapStateToProps)(SongList);

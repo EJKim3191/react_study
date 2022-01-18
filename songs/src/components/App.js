@@ -3,9 +3,14 @@ import React from 'react';
 //webpack은 specify 되지 않은 direction에 대해 자동으로 index를 준다
 //import { selectSong } from '../actions';
 //{}->export의 정확한 함수를 import 하기 위해서
+import SongList from './SongList';
 
 const App = () => {
-    return <div>App</div>;
+    return (
+        <div>
+            <SongList />
+        </div>;
+        );
 };
 
 export default App;
